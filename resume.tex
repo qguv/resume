@@ -1,0 +1,94 @@
+% adapted LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass{res} 
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{bold-extra}
+\addtolength{\topmargin}{-13mm} % decrease top margin height to fit on one page
+\setlength{\textheight}{26cm} % increase text height to fit on one page
+
+\begin{document} 
+
+\name{
+\centerline{George ``Quint'' \textsc{Guvernator v}}\\
+    \centerline{\url{http://qguv.github.io}}\\
+    \centerline{\url{quintus.public@gmail.com}}\\[12pt]
+    % the \\[12pt] adds a blank line after name
+}     
+
+\address{\textbf{Permanent Address}\\7487 Gleneagles Road\\Norfolk, VA 23505-1742\\  (757) 451-8111}
+\address{\textbf{Mailing Address}\\CSU 4104\\P.O. Box 8793\\Williamsburg, VA 23187-8793}
+                                  
+\begin{resume}
+
+\section{EDUCATION}          
+\vspace{6mm}
+\begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
+    \item[2013|present]
+        \textbf{The College of William and Mary} in Williamsburg, VA \\
+        Prospective Majors in Computer Science and Linguistics \\
+        Dean's List, G.P.A. 4.0
+    \item[2006|2013]
+        \textbf{Norfolk Academy} in Norfolk, VA \\
+        Advanced courses in French, German, Mathematics, and Music Theory \\
+        Graduated with Honors
+\end{itemize}
+
+\section{EMPLOYMENT EXPERIENCE}
+\vspace{6mm}
+\begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
+    \item[May 2013|\\August 2013]
+        \textbf{Information Technology Intern}
+        at Valeo Service, USA
+        in Newport News, VA
+        \vspace{1mm}
+        \\
+        Deployed new software and systems.
+        Provided technical support to employees.
+        Maintained company servers.
+        Helped design internal software.
+\end{itemize}
+
+\section{RESEARCH EXPERIENCE}
+\vspace{6mm}
+\begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
+    \item[Spring 2014|\\present]
+        \textbf{Resonate}, a distributed matched condition speech monitoring system. Project headed by Prof.\ Robert Dickerson. Working on machine learning algorithms and Go bindings for C{\footnotesize ++} libraries.
+\end{itemize}
+
+\section{OPEN SOURCE EXPERIENCE}
+\vspace{6mm}
+\begin{itemize}[leftmargin=5mm]
+\item Wrote \emph{rpcalc}, a reverse-polish calculator for the command-line.
+\item Wrote \emph{gitlab-init}, a git subcommand to streamline project creation.
+\item Wrote \emph{loadaverage}, a UNIX utility to determine processor load in multi-processor machines.
+\item Added features to the \emph{Pullup} news website as one of the first contributors.
+\item Refactored parts of the \emph{Git} source code in preparation for Google Summer of Code 2014.
+\item Implemented \emph{Source}, a Gitlab web source code repository.
+\item Designed test-cases for \emph{Data Structures} course at William~\&~Mary.
+\end{itemize}
+    \vspace{-3mm}
+    See \url{http://qguv.github.io} for a comprehensive list of open-source projects with URLs.
+
+\section{COMPUTER SKILLS}
+\vspace{6mm}
+\begin{itemize}[leftmargin=5mm]
+\item Proficient in the Python programming language with four years of experience.
+\item Comfortable with Go, Scheme, and Shell scripting. Familiar with C, Haskell, and Ruby.
+\item Comfortable on the web with CSS, Javascript (including node.js and Coffeescript), and HTML (including HTML5).
+\item Experienced working with large source code repositories with many contributors in Git.
+\item Designed sound for films and theatrical productions in Ableton Live.
+\item Proficient with \LaTeX~and modern desktop office suites.
+\end{itemize}
+ 
+\section{EXTRACURRICULAR ACTIVITIES}          
+\vspace{6mm}
+\begin{itemize}[leftmargin=5mm]
+    \item Copy Editor, \emph{The Flat Hat} student newspaper
+    \item Show Host, \emph{WCWM} student FM radio station
+    \item Shift Volunteer, \emph{The Meridian} student coffeehouse
+\end{itemize}
+ 
+\end{resume}
+\end{document}
