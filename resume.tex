@@ -1,12 +1,13 @@
 % adapted LaTeX file for resume 
 % This file uses the resume document class (res.cls)
 
-\documentclass{res} 
+\documentclass{res}
 \usepackage{enumitem}
 \usepackage{url}
 \usepackage{bold-extra}
-\addtolength{\topmargin}{-13mm} % decrease top margin height to fit on one page
+\addtolength{\topmargin}{-15mm} % decrease top margin height to fit on one page
 \setlength{\textheight}{26cm} % increase text height to fit on one page
+\newsectionwidth{12mm}
 
 \begin{document} 
 
@@ -23,7 +24,7 @@
 \begin{resume}
 
 \section{EDUCATION}          
-\vspace{6mm}
+\vspace{5mm}
 \begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
     \item[2013|present]
         \textbf{The College of William and Mary} in Williamsburg, VA \\
@@ -36,8 +37,18 @@
 \end{itemize}
 
 \section{EMPLOYMENT EXPERIENCE}
-\vspace{6mm}
+\vspace{5mm}
 \begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
+    \item[April 2014|\\present]
+        \textbf{Software Development Intern}
+        at the Institute for the Theory and Practice of International Relations
+        at William and Mary
+        in Williamsburg, VA
+        \vspace{1mm}
+        \\
+        Manipulated and interpreted techincal papers using machine learning algorithms.
+        Developed text mining processes.
+        Designed and maintained internal software.
     \item[May 2013|\\August 2013]
         \textbf{Information Technology Intern}
         at Valeo Service, USA
@@ -51,30 +62,28 @@
 \end{itemize}
 
 \section{RESEARCH EXPERIENCE}
-\vspace{6mm}
+\vspace{5mm}
 \begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
-    \item[Spring 2014|\\present]
+    \item[March 2014|\\present]
         \textbf{Resonate}, a distributed matched condition speech monitoring system. Project headed by Prof.\ Robert Dickerson. Working on machine learning algorithms and Go bindings for C{\footnotesize ++} libraries.
 \end{itemize}
 
 \section{OPEN SOURCE EXPERIENCE}
-\vspace{6mm}
+\vspace{5mm}
 \begin{itemize}[leftmargin=5mm]
-\item Wrote \emph{rpcalc}, a reverse-polish calculator for the command-line.
-\item Wrote \emph{gitlab-init}, a git subcommand to streamline project creation.
-\item Wrote \emph{loadaverage}, a UNIX utility to determine processor load in multi-processor machines.
-\item Added features to the \emph{Pullup} news website as one of the first contributors.
-\item Refactored parts of the \emph{Git} source code in preparation for Google Summer of Code 2014.
-\item Implemented \emph{Source}, a Gitlab web source code repository.
 \item Designed test-cases for \emph{Data Structures} course at William~\&~Mary.
+\item Wrote \emph{rpcalc}, a reverse-polish calculator for the command-line.
+\item Wrote \emph{gitlab-init}, a git subcommand to streamline remote project creation.
+\item Wrote \emph{loadaverage}, a UNIX utility to determine processor load in multi-processor machines.
+\item Implemented \emph{Source}, a Gitlab web source code repository.
 \end{itemize}
     \vspace{-3mm}
     See \url{http://qguv.github.io} for a comprehensive list of open-source projects with URLs.
 
 \section{COMPUTER SKILLS}
-\vspace{6mm}
+\vspace{5mm}
 \begin{itemize}[leftmargin=5mm]
-\item Proficient in the Python programming language with four years of experience.
+\item Proficient in the Python programming language with five years of experience.
 \item Comfortable with Go, Scheme, and Shell scripting. Familiar with C, Haskell, and Ruby.
 \item Comfortable on the web with CSS, Javascript (including node.js and Coffeescript), and HTML (including HTML5).
 \item Experienced working with large source code repositories with many contributors in Git.
@@ -83,7 +92,7 @@
 \end{itemize}
  
 \section{EXTRACURRICULAR ACTIVITIES}          
-\vspace{6mm}
+\vspace{5mm}
 \begin{itemize}[leftmargin=5mm]
     \item Copy Editor, \emph{The Flat Hat} student newspaper
     \item Show Host, \emph{WCWM} student FM radio station
