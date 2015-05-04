@@ -1,5 +1,7 @@
 F=resume
 
+all: resume cv
+
 resume:
 	./targets/resume.sh $F
 
