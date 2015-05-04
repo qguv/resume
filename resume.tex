@@ -1,13 +1,19 @@
 % adapted LaTeX file for resume 
 % This file uses the resume document class (res.cls)
 
-\documentclass{res}     % resumé class
-\usepackage{enumitem}   % custom 
+\documentclass{res}     % resume class
+\usepackage{enumitem}   % custom lists
+
 \usepackage{url}        % clickable URLs
 \usepackage{bold-extra} % bold smallcaps
-\addtolength{\topmargin}{-15mm} % decrease top margin height to fit on one page
-\setlength{\textheight}{26cm} % increase text height to fit on one page
-\newsectionwidth{12mm}
+\addtolength{\topmargin}{-15mm} % decrease top margin height to fit on one page %CV
+\setlength{\textheight}{26cm} % increase text height to fit on one page %CV
+\newsectionwidth{12mm} %CV
+
+%CV \usepackage{multicol}
+%CV \newenvironment{itemizecols}
+%CV  {\begin{multicols}{3}\raggedright\begin{itemize}}
+%CV           {\end{itemize}\end{multicols}}
 
 \begin{document} 
 
@@ -24,7 +30,7 @@
     \\ (757) 606-0005
 }
 \address{\textbf{Department Mailing Addresses}
-    \\ \{Computer Science, Linguistics\} Department
+    \\ \{Computer Science, Linguistics\} Department %CV \\ \{Linguistics, Computer Science\} Department
     \\ College of William \& Mary, P.O.\ Box 8795
     \\ Williamsburg, VA 23187-8795
 }
@@ -35,8 +41,8 @@
 \vspace{5mm}
 \begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
     \item[2013|present]
-        \textbf{The College of William and Mary} in Williamsburg, VA
-        \\ Studying Computer Science and Linguistics
+        \textbf{The College of William \& Mary}
+        \\ Studying Computer Science and Linguistics %CV \\ Studying Linguistics and Computer Science
         \\ Dean's List, Cumulative G.P.A.\ 3.7
     \item[2006|2013]
         \textbf{Norfolk Academy} in Norfolk, VA
@@ -55,8 +61,7 @@
     \item[Spring\,\&\,Fall 2014]
         \textbf{Software Development Intern}
         at the Institute for the Theory and Practice of International Relations
-        at William and Mary
-        in Williamsburg, VA
+        at William \& Mary
         \vspace{1mm} \\
         Maintained Ruby on Rails websites.
         Manipulated and interpreted techincal papers using machine learning algorithms.
@@ -75,6 +80,18 @@
 
 \section{RESEARCH EXPERIENCE}
 \vspace{5mm}
+%CV \begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
+%CV     \item[Spring 2015\\(developing)]
+%CV         \textbf{Sensation and Perception through Augmented-Reality Audio}
+%CV         with the Small Hall Makerspace
+%CV         and the Physics department
+%CV         at William \& Mary
+%CV         \vspace{1mm} \\
+%CV         Building and analyzing a system for sensory substitution or
+%CV         augmentation using electrical sensors as an artificial organ,
+%CV         augmented-reality audio as a human-machine interface, and a
+%CV         microprocessor development board for signal-processing.
+%CV \end{itemize}
 \begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
     \item[Summer 2014]
         \textbf{Learning Patterns of Mobile Interface Design}
@@ -83,6 +100,23 @@
         \vspace{1mm} \\
         Studying the effectiveness of machine learning techniques when analyzing the quality of Android applications' graphical design.
 \end{itemize}
+
+%CV \section{LINGUISTICS RESEARCH INTERESTS}
+%CV \vspace{5mm}
+%CV \begin{itemize}[leftmargin=5mm]
+%CV \item Computational linguistics research and development, especially related to cognitive science or computational cognitive modelling
+%CV \item Language documentation, analysis, and preservation with an emphasis on community empowerment
+%CV \item Theoretical work with perceptual biases and heuristics as manifest in ideolect
+%CV \end{itemize}
+
+%CV \section{COMPUTER SCIENCE RESEARCH INTERESTS}
+%CV \vspace{5mm}
+%CV \begin{itemize}[leftmargin=5mm]
+%CV \item Computational linguistics research and development, especially related to cognitive science or computational cognitive modelling
+%CV \item Programming language development
+%CV \item Developing powerful, flexible tools for computer power users and researchers outside the Software Development community
+%CV \item Design patterns within concurrent and functional programming
+%CV \end{itemize}
 
 \section{COMPUTER SKILLS}
 \vspace{5mm}
@@ -106,10 +140,34 @@
 %CV \section{EXTRACURRICULAR ACTIVITIES}          
 %CV \vspace{5mm}
 %CV \begin{itemize}[leftmargin=5mm]
+%CV     \item Member, Small Hall Makerspace within the William \& Mary Physics department
 %CV     \item Copy Editor, \emph{The Flat Hat} student newspaper
 %CV     \item Show Host and Webmaster, \emph{WCWM} student FM and internet radio station
 %CV     \item Shift Volunteer and Webmaster, \emph{The Meridian} student coffeehouse
 %CV \end{itemize}
-%CV  
+
+%CV \section{REFERENCES}
+%CV \vspace{5mm}
+%CV \begin{itemizecols}[leftmargin=5mm, label=]
+%CV     \item
+%CV         \textbf{Daniel Parker}
+%CV         \\ Professor of Linguistics
+%CV         \\ College of William \& Mary
+%CV         \\ dparker@wm.edu
+%CV         \\ +1 (757) 221-2952
+%CV     \item
+%CV         \textbf{Jack Martin}
+%CV         \\ Professor of Linguistics
+%CV         \\ College of William \& Mary
+%CV         \\ jbmart@wm.edu 
+%CV         \\ +1 (757) 221-3906
+%CV     \item
+%CV         \textbf{Robert Michael Lewis}
+%CV         \\ Chair, Department of Computer Science
+%CV         \\ College of William \& Mary
+%CV         \\ rmlewi@wm.edu 
+%CV         \\ +1 (757) 221-2032
+%CV \end{itemizecols}
+
 \end{resume}
 \end{document}

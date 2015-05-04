@@ -1,10 +1,13 @@
 F=resume
 
 resume:
-	./makeResume.sh $F
+	./targets/resume.sh $F
 
 cv:
-	./makeCV.sh $F
+	./targets/cv.sh $F
 
-clean:
-	rm -rf *.cv.* *.dvi *.pdf *.aux
+sweep:
+	rm -rf *.dvi *.aux *.log
+
+clean: sweep
+	rm -rf *.pdf

@@ -8,14 +8,14 @@ elif [[ "$uname" == "Linux" ]]; then
 	SED='sed -r'
 fi
 
-INFILE="$1"
-DVIFILE="$INFILE.dvi"
-PDFFILE="$INFILE.pdf"
+SOURCE="$1"
+DVIFILE="$SOURCE.dvi"
+PDFFILE="$SOURCE.pdf"
 
-"latex"  "$INFILE"
-"bibtex" "$INFILE"
-"latex"  "$INFILE"
-"latex"  "$INFILE"
+"latex"  "$SOURCE"
+"bibtex" "$SOURCE"
+"latex"  "$SOURCE"
+"latex"  "$SOURCE"
 "dvipdf" "$DVIFILE"
 
-echo "Saved CV to $PDFFILE"
+echo "Saved resume to $PDFFILE"
