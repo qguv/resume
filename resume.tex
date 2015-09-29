@@ -3,32 +3,54 @@
 
 \documentclass{res}     % resume class
 \usepackage{enumitem}   % custom lists
-
 \usepackage{url}        % clickable URLs
 \usepackage{bold-extra} % bold smallcaps
-\addtolength{\topmargin}{-15mm} % decrease top margin height to fit on one page %CV
-\setlength{\textheight}{26cm} % increase text height to fit on one page %CV
-\newsectionwidth{12mm} %CV
+\usepackage{multicol}   % cv references in columns
 
-%CV \usepackage{multicol}
-%CV \newenvironment{itemizecols}
-%CV  {\begin{multicols}{3}\raggedright\begin{itemize}}
-%CV           {\end{itemize}\end{multicols}}
+% Modifies the length of top-margin whitespace. Can be negative.
+% Decrease this to fit more text.
+\addtolength{\topmargin}{
+    -15mm %CV 0mm
+}
+
+% Sets how much text gets put on a page. Can't be negative.
+% Increase this to fit more text.
+\addtolength{\textheight}{
+    25mm %CV 0mm
+}
+
+% Break into multi-column with 'itemizecols' environment.
+\newenvironment{itemizecols}{
+    \begin{multicols}{3}\raggedright\begin{itemize}
+}{
+    \end{itemize}\end{multicols}
+}
 
 \begin{document} 
 
+% Top-center name heading
 \name{
 \centerline{George ``Quint'' \textsc{Guvernator v}}
-    \\ \centerline{\url{http://quint.guvernator.net}}
-    \\ \centerline{\url{quint@guvernator.net}}
-    \\[12pt] % adds a blank line after name
-}     
+\\ \centerline{\url{http://quint.guvernator.net}}
+\\ \centerline{\url{quint@guvernator.net}\footnotemark[1]}
+\\[12pt] % adds a blank line after name
+}
 
+% Manually added email footnote
+\footnotetext[1]{
+    PGP Fingerprint:
+    \texttt{65A6 6455 A2A5 CAC8 13E4
+          ~~93FB FC13 890A 40FE EF7B}
+}
+
+% Left address column (primary)
 \address{\textbf{Mailing Address}
     \\ CSU 4104, P.O.\ Box 8793
     \\ Williamsburg, VA 23187-8793
     \\ (757) 606-0005
 }
+
+% Right address column (secondary)
 \address{\textbf{Department Mailing Addresses}
     \\ \{Computer Science, Linguistics\} Department %CV \\ \{Linguistics, Computer Science\} Department
     \\ College of William \& Mary, P.O.\ Box 8795
@@ -42,7 +64,8 @@
 \begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
     \item[2013|present]
         \textbf{The College of William \& Mary}
-        \\ Studying Computer Science and Linguistics %CV \\ Studying Linguistics and Computer Science
+        \\ Studying
+        Computer Science and Linguistics %CV Linguistics and Computer Science
         \\ Dean's List, Cumulative G.P.A.\ 3.7
     \item[2006|2013]
         \textbf{Norfolk Academy} in Norfolk, VA
@@ -53,6 +76,11 @@
 \section{EMPLOYMENT EXPERIENCE}
 \vspace{5mm}
 \begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
+    \item[Spring~2015 (ongoing)]
+        \textbf{Freelance Web Developer}
+        in Williamsburg and Norfolk, VA
+        \vspace{1mm} \\
+        Designed, built, and maintained Ruby on Rails webapps and their databases.
     \item[Summer~2015~\& Summer~2013]
         \textbf{Software \& Computer Engineering}
         at Valeo Service, USA
@@ -62,11 +90,6 @@
         Deployed new software and systems.
         Maintained company servers.
         Provided technical support to employees.
-    \item[Spring~2015 (ongoing)]
-        \textbf{Freelance Web Developer}
-        in Williamsburg and Norfolk, VA
-        \vspace{1mm} \\
-        Designed, built, and maintained Ruby on Rails webapps and their databases.
     \item[Fall\,\&\,Spring 2014]
         \textbf{Software Development Intern}
         at the Institute for the Theory and Practice of International Relations
@@ -135,7 +158,8 @@
 \begin{itemize}[leftmargin=5mm]
 \item Designed test-cases and adapted project specifications for \emph{Data Structures} course at William~\&~Mary.
 \item Executed a technical review of van Baarsen's \emph{GitLab Cookbook} (Pact Publishing, Dec.\ 2014).
-\item Very active in the open-source software community; see \url{quint.guvernator.net} for an up-to-date list of current open-source projects.
+\item Active in the open-source software community; see \url{quint.guvernator.net} for an up-to-date list of projects.
+\item Built and programmed embedded systems with Arduino microcontrollers.
 \end{itemize}
 
 %CV \section{EXTRACURRICULAR ACTIVITIES}          
