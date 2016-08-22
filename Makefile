@@ -4,22 +4,21 @@ else
 SED := sed -r
 endif
 
+LATEXMK := latexmk -pdf
+
 %.pdf: %.tex
-	latex $*
-	-bibtex $*
-	latex $*
-	latex $*
-	dvipdf $*.dvi
+	$(LATEXMK) $*
 
 .PHONY: all resume cv sweep clean
 
 all: cv resume
 
 clean: sweep
-	rm -rf *.pdf
+	$(LATEXMK) -C -silent
 
 sweep:
-	rm -rf cv.tex *.dvi *.aux *.log
+	$(LATEXMK) -c -silent
+	rm -f cv.tex
 
 cv.tex: resume.tex
 	$(SED) 's/^.*%CV.?(.*)$$/\1/g' resume.tex > cv.tex
