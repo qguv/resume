@@ -11,7 +11,7 @@ This will only show up in the resume. %CV This will only show up in the CV.
 
 ## Usage
 
-Keep one tex source file called by default `resume.tex`. This can be changed; just edit the `F` variable in the makefile.
+Keep one tex source file called `resume.tex`.
 
 To build:
 
