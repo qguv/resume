@@ -7,11 +7,10 @@
 \usepackage{multicol}   % cv references in columns
 \usepackage[utf8]{inputenc}
 
-% Uncomment to use US Letter paper
-\usepackage[letterpaper]{geometry}
+\usepackage[a4paper]{geometry}
 
-% Uncomment to use A4 paper
-%\usepackage[a4paper]{geometry}
+% Uncomment to use US Letter paper
+%\usepackage[letterpaper]{geometry}
 
 \addtolength{\topmargin}{
     -15mm %CV -8mm
@@ -38,82 +37,55 @@
 % Top-center name heading
 \name{
 \centerline{George ``Quint'' \textsc{Guvernator v}}
+\\ \centerline{Amsterdam, the Netherlands}
 \\ \centerline{\url{https://quint.guvernator.net}}
-\\ \centerline{\url{quint@guvernator.net}\footnotemark[1]}
+\\ \centerline{\url{quint@guvernator.net}}
 \\[12pt] % adds a blank line after name
-}
-
-% Manually added email footnote
-\footnotetext[1]{
-    PGP Fingerprint:
-    \texttt{65A6 6455 A2A5 CAC8 13E4
-          ~~93FB FC13 890A 40FE EF7B}
-}
-
-% Left address column (primary)
-\address{\textbf{Mailing Address}
-    \\ P.O.\ Box 7264
-    \\ Richmond, VA 23221
-}
-
-% Right address column (secondary)
-\address{\textbf{Work Address}
-    \\ Snagajob
-    \\ 4851 Lake Brook Drive
-    \\ Glen Allen, VA 23060
 }
 
 \begin{resume}
 
-\section{EDUCATION}
-\vspace{5mm}
-\begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
-    \item[Fall~2013~-- Spring~2017]
-        \textbf{The College of William \& Mary} in Williamsburg, VA
-        \\ Studying
-        Computer Science and Linguistics %CV Linguistics and Computer Science
-        \\ Cumulative G.P.A.\ 3.7; Dean's List for 4 semesters
-    \item[Fall~2015]
-        \textbf{Universiteit Leiden} in Leiden, the Netherlands
-        \\ Courses in
-        Meta-Science, Linguistics, and Social Sciences %CV Linguistics, Meta-Science, and Social Sciences
-%CV \item[2006|2013]
-%CV     \textbf{Norfolk Academy} in Norfolk, VA
-%CV     \\ Advanced courses in French, German, Mathematics, and Music Theory
-%CV     \\ Graduated with Honors
-\end{itemize}
-
 \section{EMPLOYMENT EXPERIENCE}
 \vspace{5mm}
 \begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
-    \item[Summer~2017 (ongoing)]
+    \item[January~2019~-- (ongoing)]
+        \textbf{Senior Software \& Language Engineer}
+        at Surfly
+        in Amsterdam (NL)
+        \vspace{1mm} \\
+        Contributed to a co-browsing proxy server that parses and re-writes code on the fly.
+        Tracked down browser and webserver bugs in implementations of web APIs.
+        Wrote a zero-copy WebSocket proxy server.
+        Proposed, built, and deployed internal tooling to unify development across multiple platforms and types of virtualization.
+        Managed \mbox{internationalization} of all projects across fifteen languages.
+    \item[May~2017~-- November~2018]
         \textbf{API Engineer}
         at Snagajob
-        in Richmond, VA
+        in Richmond, Virginia (USA)
         \vspace{1mm} \\
-        Built REST backend microservices for a progressive work management and scheduling webapp.
+        Built REST backend microservices for a work management and scheduling webapp.
         Worked in an Agile environment adding features according to user stories.
-        Overhauled time, time zone, and notification behavior across several projects.
-        Reimplemented a geolocal project for national scale.
+        Overhauled time zone, and notification behavior across several projects.
+        Reimplemented a software prototype from a local business for nationwide production scale.
     \item[Spring~2015~-- Spring~2017]
         \textbf{Freelance Web Developer}
-        in Williamsburg, VA
+        in Williamsburg, Virginia (USA)
         \vspace{1mm} \\
-        Designed, built, and maintained Ruby on Rails webapps and their databases.
+        Designed, built, and maintained Ruby/Rails webapps and their databases.
         Evaluated and reviewed research papers for implementation feasibility.
         Provided technical consultation to local entrepreneurs.
     \item[Summer~2016]
         \textbf{Researcher}
-        at the Software Engineering Maintenence and Evolution Research Unit
-        at William \& Mary
+        at the Software Engineering Maintenance and Evolution Research Unit
+        at William \& Mary (USA)
         \vspace{1mm} \\
-        Built internal tooling for research use.
         Instrumented Android virtual machines with custom research code.
         Evaluated research papers on Android software engineering.
+        Built internal tooling for research use.
     \item[Summer~2013~\& Summer~2015]
-        \textbf{Software \& Computer Engineering}
-        at Valeo Service, USA
-        in Newport News, VA
+        \textbf{Software \& Computer Engineer}
+        at Valeo Service
+        in Newport News, Virginia (USA)
         \vspace{1mm} \\
         Designed and built internal software for a warehouse environment.
         Deployed new software and systems.
@@ -124,7 +96,7 @@
         at the Institute for the Theory and Practice of International Relations
         at William \& Mary
         \vspace{1mm} \\
-        Maintained Ruby on Rails websites.
+        Contributed to data visualization webapps to track international aid funding patterns.
         Manipulated and interpreted technical papers using machine learning algorithms.
         Developed text mining processes.
         Designed and maintained internal software.
@@ -182,41 +154,74 @@
 \section{TECHNICAL SKILLS AND EXPERIENCE}
 \vspace{5mm}
 \begin{itemize}[leftmargin=5mm]
-\item Proficient in Python (since 2008), C (since 2013), and C$^\sharp$ (since 2017). Proficient Linux systems programmer. Comfortable with Rust, Haskell, Ruby, Go, Java (the JVM and Android), and Shell scripting. Familiar with C++, Lua, and MIPS assembly.
-\item Comfortable with Ruby/Rails, Javascript (including Node, Angular, JQuery), HTML, and CSS (and its derivatives).
-\item Proficient at designing RESTful web APIs. Familiar with and enthusiastic about GraphQL.
-\item Experienced at creating, managing, and working with PostgreSQL and MongoDB databases.
-\item Experienced building, configuring, and maintaining GNU/Linux machines, both professionally and for fun, using various distributions. An official Arch Linux pre-release package tester.
-\item Active in the open-source software community; see \url{quint.guvernator.net} for projects. Proficient with git and related tools.
-%CV \item Comfortable reading and writing language grammars (EBNF/YACC and Field Linguistics alike).
+\item Proficient in
+Python (since 2008),
+C (since 2013),
+Javascript (since 2013),
+Go (since 2014),
+C$^\sharp$ (since 2017),
+and
+Z80 assembly (since 2019).
+Comfortable with
+Rust,
+Haskell,
+Ruby,
+and Shell scripting.
+Some experience with
+C++,
+Lua,
+%CV Scala,
+%CV Java,
+and other assembly dialects.
+\item Experienced working on both large and small teams, collaborating with a distributed git workflow.
+\item Proficient Linux systems programmer. Specific experience with systemd, early boot, and evdi.
+\item Proficient Web developer. Experience creating RESTful backends using Flask, Django, Rails, Node, and Rocket. Experience with PostgreSQL, MySQL, MariaDB, and MongoDB databases. Some frontend experience with Angular and Vue. Familiar with GraphQL.
+\item Active in the open-source software community; see \url{quint.guvernator.net} for projects.
+\item Deeply familiar with the internal workings of web APIs such as WebSockets, Web Workers, Canvas, and HTML5 audio.
+\item Experienced building, configuring, and maintaining GNU/Linux machines, both professionally and for fun, using various distributions. Experience with Docker, LXC/LXD, and systemd-nspawn.
+\item Comfortable reading/writing language grammars (EBNF/YACC).
 \item Executed a technical review of van Baarsen's \emph{GitLab Cookbook} (Pact Publishing, Dec.\ 2014).
 %CV \item Designed test-cases and adapted project specifications for \emph{Data Structures} course at William~\&~Mary.
 %CV \item Copy edited for \emph{The Flat Hat}, the William \& Mary student newspaper.
 %CV \item Hosted a show at and maintained the website of the \emph{WCWM} student FM and internet radio station.
 %CV \item Volunteered at and maintained the website of \emph{The Meridian} student coffeehouse.
-%CV \item Amateur Extra Class licensed in the United States; this is the most permissive license and grants all privileges on all US amateur bands.
-\item Designed sound for films, theatrical productions, and music side-projects in Ableton Live.
-%CV \item Comfortable with \LaTeX and modern desktop office suites.
+%CV \item Amateur Extra Class licensed in the United States; this is the most permissive radio license and grants all privileges on all US amateur bands.
+\item Designed sound for short films, theatrical productions, and music side-projects in Ableton Live. %CV Composed 8-bit music on the Nintendo Gameboy using homebrew software synthesizers mGB \& LSDj.
+%CV \item Comfortable with \LaTeX.
+\end{itemize}
+
+\section{EDUCATION}
+\vspace{5mm}
+\begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
+    \item[Fall~2013~-- Spring~2017]
+        \textbf{The College of William \& Mary} in Williamsburg, VA
+        \\ Majors in
+        Computer Science and Linguistics %CV Linguistics and Computer Science
+        \\ Research experience in computational linguistics and software engineering practices
+        \\ Cumulative G.P.A.\ 3.7; Dean's List for 4 semesters
+    \item[Fall~2015]
+        \textbf{Universiteit Leiden} in Leiden, the Netherlands
+        \\ Courses in
+        Meta-Science, Linguistics, and Social Sciences %CV Linguistics, Meta-Science, and Social Sciences
+%CV \item[2006|2013]
+%CV     \textbf{Norfolk Academy} in Norfolk, VA
+%CV     \\ Advanced courses in French, German, Mathematics, and Music Theory
+%CV     \\ Graduated with Honors
 \end{itemize}
 
 \section{ADMINISTRATIVE EXPERIENCE}
 \vspace{5mm}
 \begin{itemize}[leftmargin=5mm]
-\item Member Board of Directors, HackRVA, a makerspace in Richmond, VA.
-\item Former Board Member and User, Small Hall Makerspace in the William \& Mary Physics department.
-\item Retired Member, Revspace, a hackerspace in Den Haag, Netherlands.
+\item Member of Dutch hackerspaces \emph{RevSpace} (Den Haag) and \emph{Technologica Incognita} (Amsterdam).
+\item Board of Directors (2017--2018) at HackRVA, a makerspace in Richmond, VA.
+\item Board Member and User, Small Hall Makerspace in the William \& Mary Physics department.
 \end{itemize}
 
-%CV \clearpage
-\section{2018 HACKERSPACE PROJECTS}
+\section{COLLABORATIVE PROJECTS}
 \vspace{5mm}
 \begin{itemize}[leftmargin=5mm]
-\item Built and programmed the electronic name badge for the RVAsec security conference in Richmond, VA using a PIC32MX MCU on a custom circuitboard. Implemented a two-channel wavetable audio synthesizer on the badge and a composition companion app for Linux, both in C. Helped coordinate this twenty-person project over nine months.
-\item Replaced the internals of a Casio calculator watch with a custom, hand-soldered MSP430-based board with 0201-sized surface mount components. Submitted patches in C and MSP430 assembly to the upstream maintainer.
-\item Manufactured made-to-order custom mechanical keyboards for work colleagues using a laser cutter, 3D printer, and reverse-engineered bluetooth chips. Managed this ten-person project over two months.
-\item Built a distributed thermostat on the ESP8266 platform using Lua, C, and the MQTT message bus.
-\item Composed 8-bit music on the Nintendo Gameboy using homebrew software synthesizers mGB \& LSDj.
-\item Machine sewed a flag for the HackRVA makerspace.
+\item Built and programmed the electronic name badge for the 2018 RVAsec security conference using a PIC32MX MCU on a custom circuitboard. Implemented a two-channel wavetable audio synthesizer on the badge and a composition companion app for Linux, both in C. Helped coordinate the twenty-person project over nine months.
+\item Manufactured made-to-order custom mechanical keyboards for work colleagues using a laser cutter, 3D printer, and reverse-engineered bluetooth chips. Managed the ten-person project over two months.
 \end{itemize}
 
 %CV \section{REFERENCES}
