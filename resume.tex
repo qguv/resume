@@ -2,7 +2,7 @@
 
 \documentclass{res}     % resume class
 \usepackage{enumitem}   % custom lists
-\usepackage{url}        % clickable URLs
+\usepackage{hyperref}   % clickable URLs
 \usepackage{bold-extra} % bold smallcaps
 \usepackage{multicol}   % cv references in columns
 \usepackage[utf8]{inputenc}
@@ -12,14 +12,10 @@
 % Uncomment to use US Letter paper
 %\usepackage[letterpaper]{geometry}
 
-\addtolength{\topmargin}{
-    -15mm %CV -8mm
-}
+\addtolength{\topmargin}{-15mm}
 
 % cannot be negative
-\addtolength{\textheight}{
-    50mm %CV 35mm
-}
+\addtolength{\textheight}{50mm}
 
 \addtolength{\oddsidemargin}{-10mm}
 \addtolength{\evensidemargin}{-10mm}
@@ -53,23 +49,26 @@
         at Surfly
         in Amsterdam (NL)
         \vspace{1mm} \\
-        Contributed to a co-browsing proxy server that parses and re-writes code on the fly.
-        Tracked down browser and webserver bugs in implementations of web APIs.
-        Wrote a zero-copy WebSocket proxy server.
-        Proposed, built, and deployed internal tooling to unify development across multiple platforms and types of virtualization.
-        Managed \mbox{internationalization} of all projects across fifteen languages.
+        Maintained a co-browsing proxy server that parses parses and re-writes webpage source code in real-time.
+        Used meta-programming techniques to build an environment allowing users to change the way that webpage source code behaves.
+        Built sandboxed re-implementations of browser APIs to preserve user privacy.
+        Investigate and mitigate browser and webserver bugs in implementations of web APIs.
+        Wrote a zero-copy WebSocket proxy server, the first of its kind.
+        Proposed, and led an initiative to unify developer tooling across multiple platforms, virtualization types, and build workflows.
+        Managed \mbox{internationalization} of all projects across 24 languages.
+        Composed notification sounds and sound font for sonic branding.
     \item[May~2017~-- November~2018]
         \textbf{API Engineer}
         at Snagajob
-        in Richmond, Virginia (USA)
+        in Richmond, VA (USA)
         \vspace{1mm} \\
         Built REST backend microservices for a work management and scheduling webapp.
         Worked in an Agile environment adding features according to user stories.
-        Overhauled time zone, and notification behavior across several projects.
+        Overhauled time zone and notification behavior across several projects.
         Reimplemented a software prototype from a local business for nationwide production scale.
     \item[Spring~2015~-- Spring~2017]
         \textbf{Freelance Web Developer}
-        in Williamsburg, Virginia (USA)
+        in Williamsburg, VA (USA)
         \vspace{1mm} \\
         Designed, built, and maintained Ruby/Rails webapps and their databases.
         Evaluated and reviewed research papers for implementation feasibility.
@@ -85,7 +84,7 @@
     \item[Summer~2013~\& Summer~2015]
         \textbf{Software \& Computer Engineer}
         at Valeo Service
-        in Newport News, Virginia (USA)
+        in Newport News, VA (USA)
         \vspace{1mm} \\
         Designed and built internal software for a warehouse environment.
         Deployed new software and systems.
@@ -93,29 +92,49 @@
         Provided technical support to employees.
     \item[Fall\,\&\,Spring 2014]
         \textbf{Software Development Intern}
-        at the Institute for the Theory and Practice of International Relations
+        at the Global Research Institute\footnote{formerly: Institute for the Theory and Practice of International Relations (ITPIR), see \href{https://magazine.wm.edu/issue/2019-winter/new-name-for-itpir.php}{this announcement}}
         at William \& Mary
         \vspace{1mm} \\
-        Contributed to data visualization webapps to track international aid funding patterns.
+        Contributed to data visualization webapps to track international aid funding patterns with \href{https://aiddata.org}{AidData.org}.
         Manipulated and interpreted technical papers using machine learning algorithms.
         Developed text mining processes.
         Designed and maintained internal software.
 \end{itemize}
 
+\section{EDUCATION}
+\vspace{5mm}
+\begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
+    \item[Fall~2013~-- Spring~2017]
+        \textbf{The College of William \& Mary} in Williamsburg, VA (USA)
+        \\ Double-major\footnote{At W\&M, a double-major is a self-designed combined study which requires a student to concurrently complete requirements for two different bachelor's degree programs within their four-year undergraduate period.} in Computer Science \& Linguistics\footnote{The W\&M Linguistics program was nominally part of the English department \href{https://www.wm.edu/news/stories/2020/wm-first-in-virginia-to-offer-bachelors-degree-in-linguistics.php}{until 2020}. For this reason, my degree shows a Linguistics \emph{concentration} within an \emph{Interdisciplinary Studies} major. Today, the same study would appear as a \emph{Linguistics major}.}
+        \\ Research experience in computational linguistics and software engineering practices
+        \\ Cumulative G.P.A.\ 3.7; \textit{Magna cum laude}; Dean's List for 5 semesters (of 7 possible)
+    \item[Fall~2015]
+        \textbf{Universiteit Leiden} in Leiden (the Netherlands)
+        \\ Semester abroad program with W\&M
+        \\ Courses in Meta-Science, Linguistics, and Social Sciences
+%CV \item[2006|2013]
+%CV     \textbf{Norfolk Academy} in Norfolk, VA (USA)
+%CV     \\ Advanced courses in French, German, Mathematics, and Music Theory
+%CV     \\ Graduated with Honors
+\end{itemize}
+
+%CV \clearpage
 %CV \section{RESEARCH EXPERIENCE}
 %CV \vspace{5mm}
 %CV \begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
 %CV     \item[Summer 2016]
-%CV         \textbf{Software Engineering Maintenance and Evolution Research Unit}
+%CV         \textbf{\href{https://www.cs.wm.edu/semeru/}{Software Engineering Maintenance and Evolution Research Unit (SEMERU)}}
 %CV         at William \& Mary
 %CV         \vspace{1mm} \\
 %CV         Researching several topics in Android Software Engineering and
 %CV         automated testing. Developing internal tools for scraping and
 %CV         analyzing Android source and instrumenting Android code with
-%CV         research tools.
+%CV         research tools, resulting in
+%CV         \href{https://dl.acm.org/doi/10.1109/ICSE-C.2017.166}{this paper}.
 %CV     \item[Spring 2015]
 %CV         \textbf{Sensation and Perception through Augmented-Reality Audio}
-%CV         with the Small Hall Makerspace
+%CV         with the \href{https://smallhallmakerspace.wordpress.com/}{Small Hall Makerspace}
 %CV         and the Physics department
 %CV         at William \& Mary
 %CV         \vspace{1mm} \\
@@ -128,12 +147,26 @@
 %CV     \item[Summer 2014]
 %CV         \textbf{Learning Patterns of Mobile Interface Design}
 %CV         with the Department of Engineering and Sciences
-%CV         at the University of Colorado, Colorado Springs
+%CV         at the University of Colorado, Colorado Springs.
+%CV         Part of the \href{https://faculty.uccs.edu/jkalita/reu-site-advances-in-natural-language-processing/}{Advances in Natural Language Processing REU}
 %CV         \vspace{1mm} \\
-%CV         Studying the effectiveness of machine learning techniques to analyze the quality of Android applications' graphical design.
+%CV         Applying machine learning techniques to Android application layout source code to analyze design quality.
 %CV \end{itemize}
 %CV
-%CV \clearpage
+%CV \section{COMPUTER SCIENCE RESEARCH INTERESTS}
+%CV \vspace{5mm}
+%CV \begin{itemize}[leftmargin=5mm]
+%CV \item Type theory and its consequences for programming language and compiler toolchain design
+%CV \item Novel syntactic constructions (e.g. Rust lifetimes) their consequences on language design and optimizing compilers
+%CV \item New compiler tools (e.g. the Rust borrow checker)
+%CV \item Theorem provers; adding proof features to other general-purpose languages
+%CV \item Programming language development, especially concerning memory safety, thread safety, functional programming, and strong typing
+%CV \item Computational linguistics research and development, especially related to cognitive science or computational cognitive modelling
+%CV \item Design patterns within concurrent and functional programming
+%CV \item Interfaces for mixing programming languages inline (e.g. inline asm in C, unsafe Rust in Rust, Cython, wasm-bindgen)
+%CV \item Developing powerful, flexible tools for computer power users and researchers outside the software development community
+%CV \end{itemize}
+%CV
 %CV \section{LINGUISTICS RESEARCH INTERESTS}
 %CV \vspace{5mm}
 %CV \begin{itemize}[leftmargin=5mm]
@@ -142,15 +175,30 @@
 %CV \item Language documentation, analysis, and preservation with an emphasis on community empowerment
 %CV \end{itemize}
 %CV
-%CV \section{COMPUTER SCIENCE RESEARCH INTERESTS}
+%CV \section{ACADEMIC REFERENCES}
 %CV \vspace{5mm}
-%CV \begin{itemize}[leftmargin=5mm]
-%CV \item Programming language development, especially concerning memory safety, thread safety, and strong typing
-%CV \item Computational linguistics research and development, especially related to cognitive science or computational cognitive modelling
-%CV \item Developing powerful, flexible tools for computer power users and researchers outside the Software Development community
-%CV \item Design patterns within concurrent and functional programming
-%CV \end{itemize}
+%CV \begin{itemizecols}[leftmargin=4mm, label=]
+%CV     \item
+%CV         \textbf{Daniel Parker}
+%CV         \\ Associate Professor of Linguistics
+%CV         \\ The Ohio State University\footnote{formerly: the College of William \& Mary}
+%CV         \\ parker.1758@osu.edu
+%CV         \\ +1 (614) 292-4052
+%CV     \item
+%CV         \textbf{Robert Michael Lewis}
+%CV         \\ Associate Professor\footnote{formerly: Director} of Computer Science
+%CV         \\ College of William \& Mary
+%CV         \\ rmlewi@wm.edu
+%CV         \\ +1 (757) 221-2032
+%CV     \item
+%CV         \textbf{Jack Martin}
+%CV         \\ Director of Linguistics
+%CV         \\ College of William \& Mary
+%CV         \\ jbmart@wm.edu
+%CV         \\ +1 (757) 221-3906
+%CV \end{itemizecols}
 
+\clearpage
 \section{TECHNICAL SKILLS AND EXPERIENCE}
 \vspace{5mm}
 \begin{itemize}[leftmargin=5mm]
@@ -174,47 +222,22 @@ Lua,
 %CV Java,
 and other assembly dialects.
 \item Experienced working on both large and small teams, collaborating with a distributed git workflow.
-\item Proficient Linux systems programmer. Specific experience with systemd, early boot, and evdi.
-\item Proficient Web developer. Experience creating RESTful backends using Flask, Django, Rails, Node, and Rocket. Experience with PostgreSQL, MySQL, MariaDB, and MongoDB databases. Some frontend experience with Angular and Vue. Familiar with GraphQL.
-\item Active in the open-source software community; see \url{quint.guvernator.net} for projects.
-\item Deeply familiar with the internal workings of web APIs such as WebSockets, Web Workers, Canvas, and HTML5 audio.
-\item Experienced building, configuring, and maintaining GNU/Linux machines, both professionally and for fun, using various distributions. Experience with Docker, LXC/LXD, and systemd-nspawn.
 \item Comfortable reading/writing language grammars (EBNF/YACC).
-\item Executed a technical review of van Baarsen's \emph{GitLab Cookbook} (Pact Publishing, Dec.\ 2014).
+\item Proficient Web developer. Experience creating RESTful backends using Flask, Django, Rails, Node, and Rocket. Experience with PostgreSQL, MySQL, MariaDB, and MongoDB databases. Some frontend experience with Angular and Vue. Familiar with GraphQL.
+\item Proficient Linux systems programmer. Specific experience with systemd, early boot, and evdi.
+\item Active in the open-source software community; see \href{https://quint.guvernator.net}{\tt quint.guvernator.net} for projects.
+\item Deeply familiar with the internal workings of web APIs such as WebSockets, Web Workers, Canvas, and HTML5 audio.
+\item Experienced building, configuring, and maintaining GNU/Linux machines, both professionally and for fun, using various distributions. Experience with Docker/Podman, LXC/LXD/Incus, and systemd-nspawn.
+\item (2015, 2019--) Participant at \emph{RevSpace}, a hackerspace in Den Haag (the Netherlands).
+%CV \item Amateur Extra Class\footnote{Amateur Extra Class is the most permissive amateur license for radio and grants all available non-commercial privileges on all US amateur bands.} licensed in the United States.
 %CV \item Designed test-cases and adapted project specifications for \emph{Data Structures} course at William~\&~Mary.
 %CV \item Copy edited for \emph{The Flat Hat}, the William \& Mary student newspaper.
 %CV \item Hosted a show at and maintained the website of the \emph{WCWM} student FM and internet radio station.
 %CV \item Volunteered at and maintained the website of \emph{The Meridian} student coffeehouse.
-%CV \item Amateur Extra Class licensed in the United States; this is the most permissive radio license and grants all privileges on all US amateur bands.
-\item Designed sound for short films, theatrical productions, and music side-projects in Ableton Live. %CV Composed 8-bit music on the Nintendo Gameboy using homebrew software synthesizers mGB \& LSDj.
+\item Designed sound for short films, theatrical productions, and music side-projects in Ableton Live.
+%CV \item Composed 8-bit music on the Nintendo Gameboy using homebrew software synthesizers mGB \& LSDj.
+\item Executed a technical review of van Baarsen's \emph{GitLab Cookbook} (Pact Publishing, Dec.\ 2014).
 %CV \item Comfortable with \LaTeX.
-\end{itemize}
-
-\section{EDUCATION}
-\vspace{5mm}
-\begin{itemize}[font=\itshape,align=parleft,labelwidth=3cm,leftmargin=2cm]
-    \item[Fall~2013~-- Spring~2017]
-        \textbf{The College of William \& Mary} in Williamsburg, VA
-        \\ Majors in
-        Computer Science and Linguistics %CV Linguistics and Computer Science
-        \\ Research experience in computational linguistics and software engineering practices
-        \\ Cumulative G.P.A.\ 3.7; Dean's List for 4 semesters
-    \item[Fall~2015]
-        \textbf{Universiteit Leiden} in Leiden, the Netherlands
-        \\ Courses in
-        Meta-Science, Linguistics, and Social Sciences %CV Linguistics, Meta-Science, and Social Sciences
-%CV \item[2006|2013]
-%CV     \textbf{Norfolk Academy} in Norfolk, VA
-%CV     \\ Advanced courses in French, German, Mathematics, and Music Theory
-%CV     \\ Graduated with Honors
-\end{itemize}
-
-\section{ADMINISTRATIVE EXPERIENCE}
-\vspace{5mm}
-\begin{itemize}[leftmargin=5mm]
-\item Member of Dutch hackerspaces \emph{RevSpace} (Den Haag) and \emph{Technologica Incognita} (Amsterdam).
-\item Board of Directors (2017--2018) at HackRVA, a makerspace in Richmond, VA.
-\item Board Member and User, Small Hall Makerspace in the William \& Mary Physics department.
 \end{itemize}
 
 \section{COLLABORATIVE PROJECTS}
@@ -224,28 +247,13 @@ and other assembly dialects.
 \item Manufactured made-to-order custom mechanical keyboards for work colleagues using a laser cutter, 3D printer, and reverse-engineered bluetooth chips. Managed the ten-person project over two months.
 \end{itemize}
 
-%CV \section{REFERENCES}
-%CV \vspace{5mm}
-%CV \begin{itemizecols}[leftmargin=5mm, label=]
-%CV     \item
-%CV         \textbf{Jack Martin}
-%CV         \\ Director of Linguistics
-%CV         \\ College of William \& Mary
-%CV         \\ jbmart@wm.edu
-%CV         \\ +1 (757) 221-3906
-%CV     \item
-%CV         \textbf{Daniel Parker}
-%CV         \\ Professor of Linguistics
-%CV         \\ College of William \& Mary
-%CV         \\ dparker@wm.edu
-%CV         \\ +1 (757) 221-2952
-%CV     \item
-%CV         \textbf{Robert Michael Lewis}
-%CV         \\ Chair, Department of Computer Science
-%CV         \\ College of William \& Mary
-%CV         \\ rmlewi@wm.edu
-%CV         \\ +1 (757) 221-2032
-%CV \end{itemizecols}
+\section{ADMINISTRATIVE EXPERIENCE}
+\vspace{5mm}
+\begin{itemize}[leftmargin=5mm]
+\item Board of Directors and Co-treasurer (2020--2021) at \emph{Technologica Incognita}, a hackerspace in Amsterdam (the Netherlands).
+\item Board of Directors (2017--2018) at HackRVA, a makerspace in Richmond, VA (USA).
+\item Board Member and User, Small Hall Makerspace in the William \& Mary Physics department.
+\end{itemize}
 
 \end{resume}
 \end{document}
